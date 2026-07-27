@@ -9,16 +9,22 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
 import com.example.jetpackcompact.R
 
 @Composable
-fun AssetsAccess(){
+fun AssetsAccess() {
     Box(
 
         modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ){
-        Text(text = stringResource(R.string.device_name),
-            color= colorResource(R.color.orange))
+        contentAlignment = Alignment.Center,
+
+        ) {
+        Text(
+            text = stringResource(R.string.device_name),
+            color = colorResource(R.color.orange),
+            style = TextStyle()
+        )
     }
 }
